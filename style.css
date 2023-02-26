@@ -16,14 +16,14 @@ body{
     bottom: 0;
     height: 100%;
     width: 35%;
-    background-image: url(./bg-main-desktop.png);
+    background-image: url(bg-main-desktop.png);
 
 }
 .front{
     border-radius: 8px;
     margin-top: 5rem;
     margin-left: 13rem;
-    background-image: url(./bg-card-font.png);
+    background-image: url(bg-card-font.png);
     background-size: cover;
     position: relative;
     top: 2rem;
@@ -39,7 +39,7 @@ body{
     border-radius: 8px;
     margin-top: 3rem;
     margin-left: 16rem;
-    background-image: url(./bg-card-back.png);
+    background-image: url(bg-card-back.png);
     background-size: cover;
     position: relative;
     top: 1rem;
