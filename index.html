@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main" ">
+    
+    <div class="front">
+      <img src="/bg-card-front.png" alt="fbg" id="fbg">
+      <div id="logo">
+        <img src="/card-logo.svg" alt=" logo" id="logo" >
+      </div>
+      <p id="cn"> 0000 0000 0000 0000</p>
+      <p id="details"><span id="H_name">Jane Appleseed</span> <span id="E_date"> <span id="mm">00</span>/<span id="yy">00</span></span></p>
+    </div>
+    <div class="back">
+      <p id="cv">000</p>
+    </div>
+  </div>
+
+  <div class="form_container">
+    <div class="form" id="form">
+      <div class="card_holder">
+        <label for="holder">cardholder name</label>
+        <input type="text" id="holder" maxlength="12" placeholder=" e.g. Jane Appleseed">
+        <span id="error" style=" margin-top: 5px; font-size: 12px; color: red;"></span>
+      </div>
+
+      <div class="card_number">
+        <label for="number">card number</label>
+        <input type="number" id="number" max="16"  placeholder=" e.g. 1234 5678 9123 0000">
+        <span id="error" style=" margin-top: 5px; font-size: 12px; color: red;"></span>
+      </div>
+
+      <div class="exp">
+        <div class="date">
+          <label for="expire">Exp. Date (MM/YY)</label>
+          <label for="cv_number">cvc</label>
+        </div>
+
+        <div class="cv">
+          <span id="year">   <div id="date_error" style="display: grid;"> 
+            <input type="text" id="expire1" maxlength="2" size="2" placeholder=" MM"> <span id="error" style=" margin-top: 5px; font-size: 8px; color: red;"></span>
+          </div>  
+          <div id="year_error" style="display: grid; margin-left: 10px;"><input type="text" id="expire2" maxlength="2" size="2" placeholder=" YY"></span> <span id="error" style=" margin-top: 5px; font-size: 8px; color: red;"></span>
+          </div>
+              
+
+          <span style="margin-left: 8rem;" id="cvc"><input type="text" id="cv_number" maxlength="3" size="9" placeholder=" e.g. 123"><span id="error" style=" margin-top: 5px; font-size: 8px; color: red;"></span> </span></span>
+
+        </div>
+
+      </div>
+    <button  id="bt1" onclick="validateInputs();addSpaces()">Confirm</button>
+  </div>
+
+  </div>
+  
+    <div class="form2" id="form1">
+      <div class="success_tick">
+        <img src="images/icon-complete.svg" alt="success_tick" id="tick">
+     </div>
+
+    <h3>Thank you!</h3>
+    <p id="detail">We've added your card details</p>
+   <button id="btn2" onclick="toggle()">Continue</button>
+  </div>
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+-->
+<script src="script.js"></script>
+</body>
+</html>
